@@ -1,0 +1,7 @@
+export { Hero } from './Hero'
+export { Navbar } from './Navbar'
+export { Features } from './Features'
+export { HowItWorks } from './HowItWorks'
+export { Stats } from './Stats'
+export { CTA } from './CTA'
+export { Footer } from './Footer'

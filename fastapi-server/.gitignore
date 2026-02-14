@@ -1,0 +1,17 @@
+.venv
+venv
+__pycache__ 
+.env
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+node_modules
+# Jupyter Notebook
+.ipynb_checkpoints

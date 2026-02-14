@@ -1,0 +1,63 @@
+[project]
+name = "lumina-ai"
+version = "0.1.0"
+description = "Lumina AI Course Engine - AI-powered education platform"
+readme = "README.md"
+authors = [
+    { name = "Sarthak Rawat", email = "sarthakrawat525@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # FastAPI
+    "fastapi[standard]>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    # AI/LLM
+    "langchain>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "langchain-google-genai>=2.0.0",
+    "langgraph>=0.2.0",
+    # Research/Search
+    "tavily-python>=0.5.0",
+    # Vector Database (thin client for Chroma Cloud)
+    "chromadb-client>=0.5.0",
+    # Database
+    "motor>=3.6.0",
+    "pymongo>=4.10.0",
+    # Google Cloud Services
+    "google-cloud-aiplatform>=1.70.0",
+    "google-cloud-texttospeech>=2.16.0",
+    "google-cloud-storage>=2.18.0",
+    "google-cloud-documentai>=2.20.0",
+    "google-cloud-speech>=2.21.0",
+    # Configuration
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.0",
+    # Utilities
+    "httpx>=0.28.0",
+    "tokenizers>=0.15.0",
+    "mutagen>=1.47.0",
+    "youtube-transcript-api>=0.6.0",
+    # Flashcard Agent dependencies
+    "genanki>=0.13.0",
+    "pymupdf>=1.24.0",
+    "pypdf>=4.0.0",
+    "google-generativeai>=0.8.6",
+    "python-jobspy>=1.1.80",
+    # LiveKit & Simli
+    "livekit-agents[google,groq,silero]~=1.2",
+    "livekit-plugins-noise-cancellation~=0.2",
+    "livekit-plugins-turn-detector~=1.0",
+    "livekit-plugins-bey~=1.3",
+    "livekit-api>=0.6.0",
+    "typer>=0.20.0",
+]
+
+[project.scripts]
+app = "app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

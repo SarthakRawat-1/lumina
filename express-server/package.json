@@ -1,0 +1,61 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "Lumina collaboration backend with Hocuspocus, Redis, and MongoDB",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "collaboration",
+    "hocuspocus",
+    "yjs",
+    "lexical"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^7.19.0",
+    "@hocuspocus/extension-database": "^3.4.1",
+    "@hocuspocus/extension-redis": "^3.4.1",
+    "@hocuspocus/server": "^3.4.1",
+    "@remotion/bundler": "^4.0.405",
+    "@remotion/renderer": "^4.0.405",
+    "@types/uuid": "^10.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-ws": "^5.0.2",
+    "ioredis": "^5.8.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "uuid": "^13.0.0",
+    "yjs": "^13.6.27"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/express-ws": "^3.0.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^25.0.2",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.19.0"
+  }
+}
